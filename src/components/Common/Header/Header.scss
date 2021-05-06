@@ -15,11 +15,11 @@
         justify-content: flex-end;
         height: 100%;
         a {
-            height: 100%;
-            @include flexCenter();
-            font-weight: bold;
-            color: $gray;
-            padding-right: 10px;
+          height: 100%;
+          @include flexCenter();
+          font-weight: bold;
+          color: $gray;
+          padding-right: 10px;
         }
       }
     }
@@ -28,45 +28,62 @@
       margin: 0 auto;
       text-align: center;
       &-h1_logo {
-          padding: 20px;
+        padding: 20px;
         img {
           width: 156px;
         }
       }
-      &-rightSearch{
-          position: absolute;
-          top: 100px;
-          right: 200px;
-          input{
-              width: 250px;
-              outline: none;
-              border: none;
-              border-bottom: 1px solid black;
+      &-rightSearch {
+        position: absolute;
+        top: 100px;
+        right: 200px;
+        z-index: 999;
+        input {
+          width: 250px;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid black;
+        }
+        &-recent {
+          display: flex;
+          flex-direction: column;
+          width: 250px;
+          border: 1px solid $light_gray;
+          background-color: white;
+          h1 {
+            text-align: start;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 14px;
+            border-bottom: 1px solid $light_gray;
           }
-          &-recent{
-              display: flex;
-              flex-direction: column;
-              width: 250px;
-              border: 1px solid $light_gray;
-              h1{
-                  text-align: start;
-                  padding: 5px 10px;
-                  font-weight: bold;
-                  font-size: 14px;
-                  border-bottom: 1px solid $light_gray;
-              }
-              span{
-                  padding: 10px;
-              }
-              div{
-                  padding: 0 10px;
-                background-color: $light_gray;
-                width: 100%;
-                height: 30px;
-                display: flex;
-                justify-content: space-between;
-              }   
+          span {
+            padding: 10px;
           }
+          div {
+            padding: 0 10px;
+            background-color: $light_gray;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+    &-gnb {
+      border-bottom: 1px solid $light_gray;
+      margin-bottom: 20px;
+      ul {
+        max-width: $max-width;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        li > a {
+          margin-bottom: 20px;
+        }
       }
     }
   }

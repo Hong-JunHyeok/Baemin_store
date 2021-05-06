@@ -1,8 +1,8 @@
 import "./Header.scss";
 import LOGO from "assets/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [recentSearch, setRecentSearch] = useState<boolean>(false);
@@ -10,11 +10,16 @@ const Header = () => {
     setRecentSearch(true);
   };
   const handleSearchHiddle = () => {
-      setRecentSearch(false);
-  }
+    setRecentSearch(false);
+  };
   useEffect(() => {
     setRecentSearch(false);
   }, [setRecentSearch]);
+
+  const activeStyle: React.CSSProperties = {
+    fontWeight: "bold",
+    color: "#30c1c3",
+  };
 
   return (
     <header className="Header">
@@ -46,14 +51,37 @@ const Header = () => {
                     <li></li>
                 </ul> */}
                 <div>
-                    <button>전체 삭제</button>
-                    <button onClick={handleSearchHiddle}>닫기</button>
+                  <button>전체 삭제</button>
+                  <button onClick={handleSearchHiddle}>닫기</button>
                 </div>
               </div>
             )}
           </div>
         </div>
-        <div className="Header-container-gnb"></div>
+        <div className="Header-container-gnb">
+          <ul>
+            <li>
+              <NavLink to="/" activeStyle={activeStyle}>
+                전체
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" activeStyle={activeStyle}>
+                문구
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" activeStyle={activeStyle}>
+                책
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" activeStyle={activeStyle}>
+                ㅋㅋ에디션
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );

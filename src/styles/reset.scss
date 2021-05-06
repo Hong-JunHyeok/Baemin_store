@@ -3,72 +3,6 @@
 
 /* reset */
 
-@font-face {
-  font-family: "NotoSans";
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Thin.woff2)
-      format("woff2"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Thin.woff)
-      format("woff"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Thin.otf)
-      format("opentype");
-}
-@font-face {
-  font-family: "NotoSans";
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Light.woff2)
-      format("woff2"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Light.woff)
-      format("woff"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Light.otf)
-      format("opentype");
-}
-@font-face {
-  font-family: "NotoSans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Regular.woff2)
-      format("woff2"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Regular.woff)
-      format("woff"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Regular.otf)
-      format("opentype");
-}
-@font-face {
-  font-family: "NotoSans";
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Medium.woff2)
-      format("woff2"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Medium.woff)
-      format("woff"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Medium.otf)
-      format("opentype");
-}
-@font-face {
-  font-family: "NotoSans";
-  font-style: normal;
-  font-weight: bold;
-  src: url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Bold.woff2)
-      format("woff2"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Bold.woff)
-      format("woff"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Bold.otf)
-      format("opentype");
-}
-@font-face {
-  font-family: "NotoSans";
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Black.woff2)
-      format("woff2"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Black.woff)
-      format("woff"),
-    url(https://pop.baemin.com/webui/ceo_web/font/noto/NotoSansKR-Black.otf)
-      format("opentype");
-}
 * {
   box-sizing: border-box;
 }
@@ -148,8 +82,8 @@ textarea,
 button {
   font-size: 12px;
   line-height: 1.5;
-  font-family: Malgun Gothic, "맑은 고딕", AppleGothic, Dotum, "돋움",
-    sans-serif;
+  // font-family: Malgun Gothic, "맑은 고딕", AppleGothic, Dotum, "돋움",
+  //   sans-serif;
   color: #333;
 } /* color값은 디자인가이드에 맞게사용 */
 a {
