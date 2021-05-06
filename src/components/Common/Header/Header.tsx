@@ -61,22 +61,22 @@ const Header = () => {
         <div className="Header-container-gnb">
           <ul>
             <li>
-              <NavLink to="/" activeStyle={activeStyle}>
+              <NavLink to="/goods#all" activeStyle={activeStyle}>
                 전체
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" activeStyle={activeStyle}>
+              <NavLink to="/goods#stationeries" activeStyle={activeStyle}>
                 문구
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" activeStyle={activeStyle}>
+              <NavLink to="/goods#books" activeStyle={activeStyle}>
                 책
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" activeStyle={activeStyle}>
+              <NavLink to="/goods#ㅋㅋeditions" activeStyle={activeStyle}>
                 ㅋㅋ에디션
               </NavLink>
             </li>
