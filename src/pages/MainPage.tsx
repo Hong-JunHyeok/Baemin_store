@@ -1,9 +1,12 @@
-import PageTemplate from 'components/Common/PageTemplate';
+import PageTemplate from "components/Common/PageTemplate";
+import Banner from "components/Main/Banner";
 
 const MainPage = () => {
-    return <PageTemplate>
-        qweqwe
+  return (
+    <PageTemplate>
+      <Banner />
     </PageTemplate>
-}
+  );
+};
 
 export default MainPage;

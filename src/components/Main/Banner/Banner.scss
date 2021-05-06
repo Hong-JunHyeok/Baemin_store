@@ -1,0 +1,14 @@
+.Banner {
+  width: 100%;
+  &-imgContainer {
+    width: 100%;
+    height: 500px;
+    background-image: url(../../../assets/banner_image.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
